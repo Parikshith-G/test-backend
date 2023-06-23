@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(cors());
 
 mongoose
-  .connect(process.env.MONGO_URL)
+  .connect("mongodb+srv://parikshith:parikshith@cluster0.ob5p3oq.mongodb.net/")
   .then((con) => {
     console.log(`connected to ${con.connection.host}`);
   })
